@@ -1,0 +1,13 @@
+.mainComparatif {
+    text-align: center;
+    display: inline-flex;
+    font-size: 12px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    margin: none;
+    background-image: url("https://www.transparenttextures.com/patterns/arabesque.png");
+}
+
+button {
+    background-color: #48ffe0;
+}
