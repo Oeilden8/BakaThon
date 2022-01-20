@@ -15,11 +15,14 @@ function Perceuse({ perceuse }) {
 
   return (
     <div>
-      <img src={perceuse_img} alt="img_produit" className="img_produit" />
-      <div className="refNumber">{perceuse.refNumber}</div>
-      <h1 className="nom_produit">{perceuse.product}</h1>
-      <p className="prix_produit" >Prix : {perceuse.prix}€</p>
-      <p>En stock</p>
+      <div className="affichage_desktop">
+      <div className="affichage_produit">
+        <img src={perceuse_img} alt="img_produit" className="img_produit" />
+        <div className="refNumber">{perceuse.refNumber}</div>
+        <h1 className="nom_produit">{perceuse.product}</h1>
+        <p className="prix_produit" >Prix : {perceuse.prix}€</p>
+      </div>
+      <p className="en_stock">En stock</p>
       <div className="section_panier">
         <div className="modifier_produit">
           <div className="add_cut">
@@ -40,6 +43,7 @@ function Perceuse({ perceuse }) {
         Comparer
       </button>
       </div>
+    </div>
     </div>
   );
 }
