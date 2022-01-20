@@ -1,4 +1,6 @@
 import React, { createContext, useState } from "react";
+// import img from "../assets/Images/perceuse-bdecker.jpg";
+// import img2 from "../assets/Images/perceuse-bosch.webp";
 
 // On déclare la création du context
 const PanierContext = createContext();
@@ -31,6 +33,7 @@ export const PanierContextProvider = ({ children }) => {
       poids: "1,8kg",
       son: "72 dB",
       categorie: "Perceuse",
+      // image: {img},
     },
     {
       product:
@@ -86,6 +89,7 @@ export const PanierContextProvider = ({ children }) => {
       poids: "1,35kg",
       son: "48 dB",
       categorie: "Perceuse",
+      // image: {img2},
     },
     {
       product:
