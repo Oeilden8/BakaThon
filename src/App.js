@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { Routes, Route } from "react-router-dom";
+import Comparatif from "./components/Comparatif/Comparatif";
 // On déclare notre context pour pouvoir l'utiliser
 import PanierContext from "./contexts/PanierContext";
 import Perceuse from "./components/Perceuse/Perceuse";
@@ -14,6 +15,7 @@ function App() {
     <div className="App">
       <Header />
       <Routes>
+        <Route path="/Comparatif" element={<Comparatif perceuse={productManoMano[0]}/>}></Route>
         {/* je passe que la 1ere perceuse pour la page produit */}
         <Route path="/" element={<Perceuse perceuse={productManoMano[0]} />} />
       </Routes>
