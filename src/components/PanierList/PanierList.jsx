@@ -2,24 +2,24 @@ import React, { useState, useContext, useEffect } from "react";
 import PanierContext from "../../contexts/PanierContext";
 import caddie from "../../assets/panier_img/chariot.png";
 import PanierItem from "./PanierItem/PanierItem";
-import './panierlist.css'
+import "./panierlist.css";
 
 //Notre composant principal de notre Panier
 
 function PanierList() {
   const { myBasket } = useContext(PanierContext);
   const [isVisible, setIsVisible] = useState(false);
-  const [totalCount, setTotalCount] = useState();
-
+  //const [totalCount, setTotalCount] = useState();
 
   // On utilise un useEffect pour mettre a jour le prix totale d'achat.
-  useEffect(() => {
-    
-  }, [myBasket]);
+  // useEffect(() => {
+
+  // }, [myBasket]);
 
   return (
     <div>
-      <img className="img_caddie"
+      <img
+        className="img_caddie"
         src={caddie}
         alt="panier_logo"
         onClick={() => {
@@ -39,7 +39,7 @@ function PanierList() {
                 ))}
               </ul>
 
-              <div>{"Total :"}{totalCount}</div>
+              <div>{"Total :"}</div>
             </div>
           ) : (
             // Ternaire qui affiche un message en cas de panier vide
