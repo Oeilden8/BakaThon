@@ -1,0 +1,93 @@
+/* div Principale qui contient l'ensemble de ma page */
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Div qui englobe mon logo et mon espace compte et Panier */
+.header {
+  display: flex;
+  justify-content: space-between;
+  width : 100vw;
+  height : 50px;
+}
+
+.compte{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+}
+
+.icone_connect{
+  width : 25px;
+  height: 25px;
+  margin: 0px 50px 0px 10px;
+  padding : 5px;
+}
+
+.logo {
+  display: flex;
+  height : 5vh;
+  width : 40vw;
+  background-image: url('https://www.sdbpro.fr/wp-content/uploads/2018/09/Logo-ManoMano.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* div qui englobe mon menu burger et ma navbar */
+.menubuger {
+  height : 40px;
+  width : 40px;
+  background-image: url('https://toppng.com/uploads/preview/menu-burger-11550717352cwtvprxwm8.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.searchbar {
+  display: flex;
+  align-items: center;
+}
+
+.menu_searchbar{
+  display : flex;
+  flex-direction: row;
+}
+
+.search_bar{
+  display: flex;
+  width : 70vw;
+  height : 3vh;
+  border-radius: 15px;
+}
+
+.search_button{
+  margin : 2px;
+  height : 4vh;
+  width: 8vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  align-items: center;
+  border-radius: 20px;
+  background-image: url('https://img2.freepng.fr/20180510/pkw/kisspng-magnifying-glass-brand-logo-clip-art-5af4553e0b3a00.531823051525962046046.jpg');
+}
+
+/* Div de ma navBar */
+.NavBar {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  align-items: flex-end;
+  border-bottom: 1px solid rgb(160, 160, 160);
+  box-shadow: 2px;
+}
+
+.NavBar a {
+  text-decoration: none;
+}
+
+
+
