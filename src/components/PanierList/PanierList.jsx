@@ -18,20 +18,19 @@ function PanierList() {
 
   return (
     <div>
-      <img
-        className="img_caddie"
-        src={caddie}
-        alt="panier_logo"
+      <div
         onClick={() => {
           setIsVisible(!isVisible);
-        }}
-      />
+        }}  
+      >
+        <img className="img_caddie" src={caddie} alt="panier_logo" />
+      </div>
       {isVisible ? (
-        <div>
+        <div className="modal_panierlist">
           <h3>{"Mon Panier"}</h3>
           {myBasket ? (
             // Si le panier est rempli on affiche les produit à l'interieur
-            // Fanny : si tu met juste constante ? ca veut dire si la constante existe, en gros si elle est pas vide, pas besoin d'ecrire un truc après ? :)
+            // Fanny : si tu met juste constante ? ca veut dire si la constante existe, en gros si elle est pas vide, pas besoin d'ecrire un truc après ? :) - Cyriac oui c'est ça ^^
             <div>
               <ul>
                 {myBasket.map((item, index) => (

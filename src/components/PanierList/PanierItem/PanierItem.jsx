@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import PanierContext from "../../../contexts/PanierContext";
+import './panieritem.css';
 
 function PanierItem({ product, refNumber, prix }) {
   const { myBasket, setMyBasket } = useContext(PanierContext);
@@ -7,13 +8,14 @@ function PanierItem({ product, refNumber, prix }) {
 
   //Fonction pour pouvoir retirer un produit de notre Panier (à tester mais aled  ALEEEED)
   const handleDelete = (refNumber) => {
+    console.log(myBasket);
     const copyMyBasket = [...myBasket].filter(
       (panier) => panier.refNumber !== refNumber
     );
     setMyBasket(copyMyBasket);
   };
   return (
-    <li>
+    <li> <div className="flex-position">
       <button
         id={refNumber}
         onClick={(e) => {
@@ -31,6 +33,7 @@ function PanierItem({ product, refNumber, prix }) {
         {prix}
         {" €"}
       </h2>
+      </div>
     </li>
   );
 }
