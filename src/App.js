@@ -4,14 +4,14 @@ import { Routes, Route } from "react-router-dom";
 import PanierContext from "./contexts/PanierContext";
 import Perceuse from "./components/Perceuse/Perceuse";
 import Suggestions from "./components/Suggestions/Suggestions";
-import PanierList from "./components/PanierList/PanierList";
+import Header from "./components/Header/Header";
 
 function App() {
   //on vient chercher directement les states que l'on veut utiliser en utilisant la destructuration
   const { productManoMano } = useContext(PanierContext);
   return (
     <div className="App">
-      <PanierList />
+      <Header />
       <Routes>
         {/* je passe que la 1ere perceuse pour la page produit */}
         <Route path="/" element={<Perceuse perceuse={productManoMano[0]} />} />

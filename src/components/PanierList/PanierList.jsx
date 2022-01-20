@@ -2,6 +2,7 @@ import React, { useState, useContext, useEffect } from "react";
 import PanierContext from "../../contexts/PanierContext";
 import caddie from "../../assets/panier_img/chariot.png";
 import PanierItem from "./PanierItem/PanierItem";
+import './panierlist.css'
 
 //Notre composant principal de notre Panier
 
@@ -18,7 +19,7 @@ function PanierList() {
 
   return (
     <div>
-      <img
+      <img className="img_caddie"
         src={caddie}
         alt="panier_logo"
         onClick={() => {
