@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import PanierContext from "../../contexts/PanierContext";
+import "../Suggestion/suggestion.css"
 
 function Suggestions(props) {
   
@@ -15,8 +16,9 @@ function Suggestions(props) {
   };
 
   return (
-    <div>
-      <h1>Je suis une suggestion</h1>
+    <div className="Card">
+      <div className="CardList">
+      {/* <h1>Je suis une suggestion</h1> */}
       <h2>{props.product}</h2>
       <p>{props.refNumber}</p>
       <p>Prix : {props.prix}€</p>
@@ -26,6 +28,7 @@ function Suggestions(props) {
       >
         Ajouter au Panier !
       </button>
+      </div>
     </div>
   );
 }

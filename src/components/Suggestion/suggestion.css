@@ -3,21 +3,25 @@
   font-size: 10px;
 }
 
-.CardList {
+.Card {
   display: flex;
-  flex-direction: column-reverse;
-  float: inline-end;
+  justify-content: flex-end;
+
 }
 
-.card {
-  display: flex;
-  border-radius: 15px;
-  margin: 0 0em 3em 0;
-  width: 172px;
-  height: 380px;
-  border: 1px solid black;
-  text-align: center;
+.CardList {
+display: flex;
+flex-direction: column;
+border-radius: 15px;
+margin: 0 0em 3em 0;
+width: 172px;
+height: 380px;
+border: 1px solid black;
+text-align: center;
+font-size: 10px;
 }
+
+
 
 p {
   text-align: center;
