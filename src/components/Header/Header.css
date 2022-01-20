@@ -80,7 +80,7 @@
   margin-top: 15px;
   padding-bottom: 10px;
   text-decoration: none;
-  align-items: end;
+  align-items: flex-end;
   border-bottom: 1px solid rgb(160, 160, 160);
   box-shadow: 2px;
 }
@@ -88,5 +88,6 @@
 .NavBar a {
   text-decoration: none;
 }
+
 
 
