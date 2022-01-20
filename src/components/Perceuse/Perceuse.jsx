@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import "./perceuse.css";
-import perceuse_img from "../../assets/perceuse-makita.webp";
+import perceuse_img from "../../assets/Images/perceuse-makita.webp";
 import PanierContext from "../../contexts/PanierContext";
 
 function Perceuse() {
