@@ -51,6 +51,38 @@ function Perceuse({ perceuse }) {
           Comparer
         </button>
       </div>
+      <div className="fiche_produit">
+        <h2 className="titre_détail_produit">Détails du produit</h2>
+        <div className="container_détails_produit">
+          <div className="titre_cara_produit">Caractéristiques</div>
+          <div className="caractéristique_produit">
+            <div className="liste_caractéristiques">
+              <div className="caracteristique1">alimentation</div>
+              <div className="caracteristique2">{perceuse.alimentation}</div>
+            </div>
+            <div className="liste_caractéristiques">
+              <div className="caracteristique1">utilisation</div>
+              <div className="caracteristique2">{perceuse.utilisation}</div>
+            </div>
+            <div className="liste_caractéristiques">
+              <div className="caracteristique1">Tension</div>
+              <div className="caracteristique2">{perceuse.tension}</div>
+            </div>
+            <div className="liste_caractéristiques">
+              <div className="caracteristique1">caracteristiques</div>
+              <div className="caracteristique2">{perceuse.caracteristiques}</div>
+            </div>
+            <div className="liste_caractéristiques">
+              <div className="caracteristique1">Mandrin</div>
+              <div className="caracteristique2">{perceuse.diametreMandrin}</div>
+            </div>
+            <div className="liste_caractéristiques">
+              <div className="caracteristique1">Nombre de batterie</div>
+              <div className="caracteristique2">{perceuse.nbBatterie}</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
