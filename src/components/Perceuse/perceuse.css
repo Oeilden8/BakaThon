@@ -1,6 +1,19 @@
+.container{
+  font-family: 'Times New Roman', Times, serif;
+  margin: auto;
+}
+
+.centre_img{
+  display: flex;
+  justify-content: center;
+  width: auto;
+}
+
 .img_produit{
-  width : 100vw;
-  height: 40vh;
+  margin: auto;
+  text-align: center;
+  width :300px;
+  height: 200px;
 }
 
 .nom_produit{
@@ -62,4 +75,96 @@
   width: 100%;
   height : 40px;
   border-radius: 10px;
+}
+
+/* --------------------------------------- */
+/* Media queries 640px max */
+
+@media screen and (min-width: 640px){
+  .affichage_desktop{
+    margin: auto;
+     display: flex;
+    /* justify-content: center;
+    flex-direction: row; */ 
+  }
+
+  /* .affichage_produit{
+    flex-wrap: wrap-reverse;
+  } */
+ 
+  .img_produit{
+    width : 400px;
+    height: 40vh;
+    margin-right: 30px;
+    object-fit: cover;
+  }
+
+  .info-produit{
+    flex-direction: column;
+  }
+  
+  .nom_produit{
+    font-size: x-large;
+  }
+
+  .en_stock{
+    align-items: center;
+  }
+  
+  .prix_produit{
+    font-size: x-large;
+    font-weight: bold;
+  }
+  
+  .section_panier{
+    margin: auto;
+    display: flex;
+    background-color: rgba(199, 199, 199, 0.445);
+    width : 300px;
+    height: 150px;
+  }
+  
+  
+  
+  .modifier_produit{
+    justify-content: space-between;
+    display: flex;
+    margin: 5px 20px;
+  }
+  .add_cut{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .bouton_moins{
+    border: none;
+  }
+  
+  .nombre_produit{
+    width : 15px;
+    border: none;
+  }
+  
+  .bouton_plus{
+    border: none;
+  }
+  
+  .Button_ajout_panier{
+    border: none;
+    background-color: #29b9ad;
+    width: 100%;
+    height : 40px;
+    border-radius: 10px;
+    margin: 10px 0px;
+  
+  }
+  
+  .Button_comparer{
+    border: none;
+    background-color: #29b9ad;
+    width: 100%;
+    height : 40px;
+    border-radius: 10px;
+  }
+
 }
