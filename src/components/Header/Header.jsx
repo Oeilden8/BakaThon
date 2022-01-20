@@ -2,6 +2,7 @@ import React from 'react';
 import './Header.css';
 import img_product from './Header_Product/product_img.png';  
 import logoSold from './Header_Product/logosold.png';
+import PanierList from '../PanierList/PanierList';
 
 export default function Header() {
   return (
@@ -15,6 +16,7 @@ export default function Header() {
           <div className="mot_compte">compte</div>
           <img src={img_product} alt="compte_connect" className="icone_connect" />
           </a>
+          <PanierList />
         </div>
       </div>
       <div className="menu_searchbar">
