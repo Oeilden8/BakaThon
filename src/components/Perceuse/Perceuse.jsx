@@ -71,27 +71,27 @@ function Perceuse() {
           <div className="caractéristique_produit">
             <div className="liste_caractéristiques">
               <div className="caracteristique1">alimentation</div>
-              <div className="caracteristique2">{perceuse.alimentation}</div>
+              <div className="caracteristique2">{productManoMano[0].alimentation}</div>
             </div>
             <div className="liste_caractéristiques">
               <div className="caracteristique1">utilisation</div>
-              <div className="caracteristique2">{perceuse.utilisation}</div>
+              <div className="caracteristique2">{productManoMano[0].utilisation}</div>
             </div>
             <div className="liste_caractéristiques">
               <div className="caracteristique1">Tension</div>
-              <div className="caracteristique2">{perceuse.tension}</div>
+              <div className="caracteristique2">{productManoMano[0].tension}</div>
             </div>
             <div className="liste_caractéristiques">
               <div className="caracteristique1">caracteristiques</div>
-              <div className="caracteristique2">{perceuse.caracteristiques}</div>
+              <div className="caracteristique2">{productManoMano[0].caracteristiques}</div>
             </div>
             <div className="liste_caractéristiques">
               <div className="caracteristique1">Mandrin</div>
-              <div className="caracteristique2">{perceuse.diametreMandrin}</div>
+              <div className="caracteristique2">{productManoMano[0].diametreMandrin}</div>
             </div>
             <div className="liste_caractéristiques">
               <div className="caracteristique1">Nombre de batterie</div>
-              <div className="caracteristique2">{perceuse.nbBatterie}</div>
+              <div className="caracteristique2">{productManoMano[0].nbBatterie}</div>
             </div>
           </div>
         </div>
