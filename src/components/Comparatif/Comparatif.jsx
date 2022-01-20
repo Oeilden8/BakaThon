@@ -6,7 +6,7 @@ function Comparatif() {
 
   const firstProduit =
   {
-    url: "https://raw.githubusercontent.com/Oeilden8/BakaThon/productList/src/assets/perceuse-bosch.webp",
+    url: "src/assets/spa-rond.jpg",
     titre: "Titre du produit qui est super méga cool, avec des choses annexes un peu chers mais tout aussi méga trop cool ",
     caractéristique: {
       titreproduit: "titre du produit",
@@ -47,7 +47,7 @@ function Comparatif() {
   return (
     <div className="mainComparatif">
       <div className="cardComparatif switchComparatifFirst">
-        <div>{firstProduit.url}</div>
+        {/* <div>{firstProduit.url}</div>
         <div><h1 className="titreComparatif">{firstProduit.titre}</h1></div>
         <div><h2 className="titreComparatifDetails">Détails du produit</h2></div>
         <ul>
@@ -86,7 +86,7 @@ function Comparatif() {
           <li>Forme du pommeau: {secondProduit.caractéristique.Formedupommeau}</li>
           <li>Longueur du flexible: {secondProduit.caractéristique.Longueurduflex}</li>
         </ul>
-        <button>Ajouter au panier</button>
+        <button>Ajouter au panier</button> */}
       </div>
     </div>)
 };
