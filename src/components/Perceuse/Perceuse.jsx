@@ -25,12 +25,18 @@ function Perceuse() {
   };
 
   return (
-    <div>
-      <img src={perceuse_img} alt="img_produit" className="img_produit" />
-      <div className="refNumber">{productManoMano[0].refNumber}</div>
-      <h1 className="nom_produit">{productManoMano[0].product}</h1>
-      <p className="prix_produit">Prix : {productManoMano[0].prix}€</p>
-      <p>En stock</p>
+    <div className="container">
+      <div className="affichage_desktop">
+        <div className="centre_img">
+          <img src={perceuse_img} alt="img_produit" className="img_produit" />
+        </div>
+        <div className="info-produit">
+          <div className="refNumber">{productManoMano[0].refNumber}</div>
+          <h1 className="nom_produit">{productManoMano[0].product}</h1>
+          <p className="prix_produit">Prix : {productManoMano[0].prix}€</p>
+          <p>En stock</p>
+        </div>
+      </div>
       <div className="section_panier">
         <div className="modifier_produit">
           <div className="add_cut">
