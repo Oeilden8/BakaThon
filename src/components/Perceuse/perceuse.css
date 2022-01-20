@@ -1,0 +1,65 @@
+.img_produit{
+  width : 100vw;
+  height: 40vh;
+}
+
+.nom_produit{
+  font-size: x-large;
+}
+
+.prix_produit{
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.section_panier{
+  margin: 5px 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(199, 199, 199, 0.445);
+  border-radius: 10px;
+  padding: 10px 0px;
+}
+
+
+
+.modifier_produit{
+  justify-content: space-between;
+  display: flex;
+  margin: 5px 20px;
+}
+.add_cut{
+  display: flex;
+  justify-content: center;
+}
+
+.bouton_moins{
+  border: none;
+}
+
+.nombre_produit{
+  width : 15px;
+  border: none;
+}
+
+.bouton_plus{
+  border: none;
+}
+
+.Button_ajout_panier{
+  border: none;
+  background-color: #29b9ad;
+  width: 100%;
+  height : 40px;
+  border-radius: 10px;
+  margin: 10px 0px;
+
+}
+
+.Button_comparer{
+  border: none;
+  background-color: #29b9ad;
+  width: 100%;
+  height : 40px;
+  border-radius: 10px;
+}
