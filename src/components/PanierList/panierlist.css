@@ -4,3 +4,9 @@
   border: 1px solid red;;
   
 }
+
+.modal_panierlist {
+  border: 1px solid red;
+  z-index: 999;
+  position: absolute;
+}
