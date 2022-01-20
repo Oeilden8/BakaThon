@@ -5,7 +5,7 @@ function PanierItem({ product, refNumber, prix }) {
   const { myBasket, setMyBasket } = useContext(PanierContext);
 
 
-  //Fonction pour pouvoir retirer un produit de notre Panier (à tester   ALEEEED)
+  //Fonction pour pouvoir retirer un produit de notre Panier (à tester mais aled  ALEEEED)
   const handleDelete = (refNumber) => {
     const copyMyBasket = [...myBasket].filter(
       (panier) => panier.refNumber !== refNumber
