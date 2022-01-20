@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <Header />
       <Routes>
-        <Route path="/Comparatif" element={<Comparatif perceuse={productManoMano[0]}/>}></Route>
+        <Route path="/Comparatif" element={<Comparatif />}></Route>
         {/* je passe que la 1ere perceuse pour la page produit */}
         <Route path="/" element={<Perceuse perceuse={productManoMano[0]} />} />
       </Routes>

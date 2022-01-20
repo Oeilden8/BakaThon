@@ -9,6 +9,10 @@ export const PanierContextProvider = ({ children }) => {
   const [myBasket, setMyBasket] = useState([]);
   // state du bouton compare
   const [compare, setCompare] = useState(false);
+
+  const [product_1, setProduct_1] = useState({});
+  const [product_2, setProduct_2] = useState({});
+
   const [productManoMano, setProductManoMano] = useState([
     {
       product:
@@ -202,6 +206,10 @@ export const PanierContextProvider = ({ children }) => {
         setMyBasket,
         compare,
         setCompare,
+        product_1,
+        setProduct_1,
+        product_2,
+        setProduct_2,
       }}
     >
       {children}
