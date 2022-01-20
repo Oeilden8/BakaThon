@@ -1,4 +1,6 @@
 import React, { createContext, useState } from "react";
+// import img from "../assets/Images/perceuse-bdecker.jpg";
+// import img2 from "../assets/Images/perceuse-bosch.webp";
 
 
 // On déclare la création du context
@@ -32,6 +34,7 @@ export const PanierContextProvider = ({ children }) => {
       percageBois: "13mm",
       son: "72 dB",
       categorie: "Perceuse",
+      // image: {img},
     },
     {
       //Fanny - j'ai juste changé prix et nom pour le moment
@@ -56,6 +59,7 @@ export const PanierContextProvider = ({ children }) => {
       percageBois: "13mm",
       son: "72 dB",
       categorie: "Perceuse",
+      // image: {img2},
     },
   ]);
 

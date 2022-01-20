@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import PanierContext from "../../contexts/PanierContext";
-import "../Suggestion/suggestion.css"
+import "../Suggestion/suggestion.css";
+import img from "../../assets/Images/perceuse-bdecker.jpg";
 
 function Suggestions(props) {
   
@@ -19,16 +20,19 @@ function Suggestions(props) {
     <div className="Card">
       <div className="CardList">
       {/* <h1>Je suis une suggestion</h1> */}
+      <img className="img" src={img} alt="test" />
       <h2>{props.product}</h2>
       <p>{props.refNumber}</p>
       <p>Prix : {props.prix}€</p>
-      <button
+      {/* <img src={props.image} alt="test" /> */}
+      {/* <button className="btn"
         id={props.refNumber}
         onClick={(e) => handleAddProduct(e.target.id)}
       >
         Ajouter au Panier !
-      </button>
+      </button> */}
       </div>
+      
     </div>
   );
 }
