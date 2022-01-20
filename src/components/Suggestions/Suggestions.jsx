@@ -8,10 +8,9 @@ function Suggestions(props) {
 
 
   // Fonction pour ajouter un produit à son panier (en cours de production ALED)
-  const handleAddProduct = (ref) => {
+  const handleAddProduct  = (ref) => {
     const addProduct = productManoMano.filter((item) => item.refNumber === ref);
     setMyBasket([...myBasket, ...addProduct]);
-    console.log(...addProduct);
     console.log(myBasket);
   };
 
