@@ -7,6 +7,8 @@ const PanierContext = createContext();
 export const PanierContextProvider = ({ children }) => {
   //on déclare les states que l'on veut rendre disponible dans tout les enfants
   const [myBasket, setMyBasket] = useState([]);
+  // state du bouton compare
+  const [compare, setCompare] = useState(false);
   const [productManoMano, setProductManoMano] = useState([
     {
       product:
@@ -193,7 +195,14 @@ export const PanierContextProvider = ({ children }) => {
     // ici on créer le provider qui sera le composant sandwich
     <PanierContext.Provider
       //Toute les valeur que l'on veut transmettre grace à ce context
-      value={{ productManoMano, setProductManoMano, myBasket, setMyBasket }}
+      value={{
+        productManoMano,
+        setProductManoMano,
+        myBasket,
+        setMyBasket,
+        compare,
+        setCompare,
+      }}
     >
       {children}
     </PanierContext.Provider>
