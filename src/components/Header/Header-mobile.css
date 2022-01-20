@@ -1,6 +1,7 @@
-/* Page de CSS pour le format desktop */
+/* Page de CSS pour le format mobile */
 
-@media (min-width: 480px) {
+@media (max-width: 480px) {
+
 
 /* div Principale qui contient l'ensemble de ma page */
 
@@ -44,6 +45,7 @@
 }
 
 /* div qui englobe mon menu burger et ma navbar */
+
 .menubuger {
   height : 40px;
   width : 40px;
@@ -51,7 +53,6 @@
   background-size: contain;
   background-repeat: no-repeat;
   align-self: center;
-
 }
 
 .searchbar {
@@ -62,8 +63,9 @@
 .menu_searchbar{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-between; 
   width: 99%;
+
 }
 
 .search_bar{

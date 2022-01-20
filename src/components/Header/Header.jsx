@@ -1,5 +1,6 @@
 import React from "react";
 import "./Header.css";
+import "./Header-mobile.css";
 import img_product from "./Header_Product/product_img.png";
 import logoSold from "./Header_Product/logosold.png";
 import PanierList from "../PanierList/PanierList";

@@ -16,9 +16,8 @@ function Comparatif({ perceuse }) {
         <div><h2 className="titreComparatifDetails">Détails du produit</h2></div>
         <ul>
           <li className="titreCaractéristiques">Caractéristiques</li>
-          {perceuse.map((value) => <li>{Object.keys}: {value.Object.keys}</li>)}
         </ul>
-        <button>Ajouter au panier</button>
+        <button className="Comparatifbutton">Ajouter au panier</button>
       </div>
     </div>)
 };

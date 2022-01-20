@@ -1,12 +1,14 @@
 .img_caddie {
   height: 40px;
   width: 40px;
-  border: 1px solid red;;
   
 }
 
 .modal_panierlist {
-  border: 1px solid red;
+  border: 1px solid;
   z-index: 999;
   position: absolute;
+  background-color: white;
+  margin-left: -80px;
+  padding: 10px;
 }
