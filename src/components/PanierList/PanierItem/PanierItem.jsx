@@ -15,8 +15,9 @@ function PanierItem({ product, refNumber, prix }) {
   return (
     <li>
       <button
+        id={refNumber}
         onClick={(e) => {
-          handleDelete(e.target.refNumber);
+          handleDelete(e.target.id);
         }}
       >
         X

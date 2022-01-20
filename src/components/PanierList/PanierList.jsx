@@ -24,13 +24,13 @@ function PanierList() {
         onClick={() => {
           setIsVisible(!isVisible);
         }}
-      />{" "}
+      />
       {isVisible ? (
         <div>
           <h3>{"Mon Panier"}</h3>
-          {myBasket === [] ? 
-          // Si le panier est rempli on affiche les produit à l'interieur
-          (
+          {myBasket ? (
+            // Si le panier est rempli on affiche les produit à l'interieur
+            // Fanny : si tu met juste constante ? ca veut dire si la constante existe, en gros si elle est pas vide, pas besoin d'ecrire un truc après ? :)
             <div>
               <ul>
                 {myBasket.map((item, index) => (
@@ -41,7 +41,7 @@ function PanierList() {
               <div>{"Total :"}{totalCount}</div>
             </div>
           ) : (
-            // Tertiaire qui affiche un message en cas de panier vide
+            // Ternaire qui affiche un message en cas de panier vide
             "Vous n'avez rien dans votre panier"
           )}
         </div>
