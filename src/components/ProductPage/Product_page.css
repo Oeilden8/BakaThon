@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width : 100vw;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width : 100vw;
+  height : 50px;
+}
+
+.compte{
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  height : 5vh;
+  width : 40vw;
+  background-image: url('https://www.sdbpro.fr/wp-content/uploads/2018/09/Logo-ManoMano.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.compte{
+  height: 20px;
+}
+
+.menu_searchbar{
+  display : flex;
+  flex-direction: row;
+}
+
+.menubuger {
+  height : 40px;
+  width : 40px;
+  background-image: url('https://toppng.com/uploads/preview/menu-burger-11550717352cwtvprxwm8.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.search_bar{
+  width : 20vw;
+}
+
+
