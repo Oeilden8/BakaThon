@@ -10,9 +10,9 @@ export default function Header() {
         <a href="https://www.google.fr/">
           <div className="logo"></div>
         </a>
-          <div ClassName="block_compte">
+          <div className="block_compte">
         <a href="https://www.google.fr/" className="compte">
-          <div ClassName="mot_compte">compte</div>
+          <div className="mot_compte">compte</div>
           <img src={img_product} alt="compte_connect" className="icone_connect" />
           </a>
         </div>
@@ -31,11 +31,11 @@ export default function Header() {
         </div>
       </div>
       <div className="NavBar">
-        <a ClassName="Soldes" href="https://www.google.fr/"><img alt="solde" ClassName="Soldes" src={logoSold}/>Soldes</a>
-        <a ClassName="BonsPlans" href="https://www.google.fr/">Bons Plans</a>
-        <a ClassName="MeilleuresVentes" href="https://www.google.fr/">Meilleures ventes</a>
+        <a className="Soldes" href="https://www.google.fr/"><img alt="solde" className="Soldes" src={logoSold}/>Soldes</a>
+        <a className="BonsPlans" href="https://www.google.fr/">Bons Plans</a>
+        <a className="MeilleuresVentes" href="https://www.google.fr/">Meilleures ventes</a>
       </div>
-      <div ClassName="DivDuTrait"></div>
+      <div className="DivDuTrait"></div>
     </div>
   )
 }
