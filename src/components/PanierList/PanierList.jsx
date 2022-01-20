@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState, useContext } from "react";
 import PanierContext from "../../contexts/PanierContext";
 import caddie from "../../assets/panier_img/chariot.png";
 import PanierItem from "./PanierItem/PanierItem";
