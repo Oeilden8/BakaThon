@@ -4,7 +4,6 @@ import PanierContext from "../../../contexts/PanierContext";
 function PanierItem({ product, refNumber, prix }) {
   const { myBasket, setMyBasket } = useContext(PanierContext);
 
-
   //Fonction pour pouvoir retirer un produit de notre Panier (à tester   ALEEEED)
   const handleDelete = (refNumber) => {
     const copyMyBasket = [...myBasket].filter(
@@ -15,8 +14,9 @@ function PanierItem({ product, refNumber, prix }) {
   return (
     <li>
       <button
+        id={refNumber}
         onClick={(e) => {
-          handleDelete(e.target.refNumber);
+          handleDelete(e.target.id);
         }}
       >
         X
