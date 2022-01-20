@@ -46,7 +46,7 @@ function Comparatif() {
 
   return (
     <div className="mainComparatif">
-      <div>
+      <div className="cardComparatif switchComparatifFirst">
         <div>{firstProduit.url}</div>
         <div><h1 className="titreComparatif">{firstProduit.titre}</h1></div>
         <div><h2 className="titreComparatifDetails">Détails du produit</h2></div>
@@ -67,28 +67,26 @@ function Comparatif() {
         </ul>
         <button>Ajouter au panier</button>
       </div>
-      <div>
-        <div>
-          <div>{firstProduit.url}</div>
-          <div><h1 className="titreComparatif">{firstProduit.titre}</h1></div>
-          <div><h2 className="titreComparatifDetails">Détails du produit</h2></div>
-          <ul>
-            <li className="titreCaractéristiques">Caractéristiques</li>
-            <li>Titre du produit : {secondProduit.caractéristique.titreproduit}</li>
-            <li>Métal: {secondProduit.caractéristique.Métal}</li>
-            <li>Fixation: {secondProduit.caractéristique.Fixation}</li>
-            <li>Hauteur colonne max: {secondProduit.caractéristique.Hauteurcolonne}</li>
-            <li>Forme du pommeau: {secondProduit.caractéristique.Formepommeau}</li>
-            <li>Largeur / Diamètre tête: {secondProduit.caractéristique.LargeurDiamètre}</li>
-            <li>Longueur fléxible: {secondProduit.caractéristique.Longueurflex}</li>
-            <li>Caractéristiques: {secondProduit.caractéristique.Caractéristique}</li>
-            <li>Métal: {secondProduit.caractéristique.Metal}</li>
-            <li>Finition: {secondProduit.caractéristique.Finition}</li>
-            <li>Forme du pommeau: {secondProduit.caractéristique.Formedupommeau}</li>
-            <li>Longueur du flexible: {secondProduit.caractéristique.Longueurduflex}</li>
-          </ul>
-          <button>Ajouter au panier</button>
-        </div>
+      <div className="cardComparatif switchComparatifSecond">
+        <div>{firstProduit.url}</div>
+        <div><h1 className="titreComparatif">{firstProduit.titre}</h1></div>
+        <div><h2 className="titreComparatifDetails">Détails du produit</h2></div>
+        <ul>
+          <li className="titreCaractéristiques">Caractéristiques</li>
+          <li>Titre du produit : {secondProduit.caractéristique.titreproduit}</li>
+          <li>Métal: {secondProduit.caractéristique.Métal}</li>
+          <li>Fixation: {secondProduit.caractéristique.Fixation}</li>
+          <li>Hauteur colonne max: {secondProduit.caractéristique.Hauteurcolonne}</li>
+          <li>Forme du pommeau: {secondProduit.caractéristique.Formepommeau}</li>
+          <li>Largeur / Diamètre tête: {secondProduit.caractéristique.LargeurDiamètre}</li>
+          <li>Longueur fléxible: {secondProduit.caractéristique.Longueurflex}</li>
+          <li>Caractéristiques: {secondProduit.caractéristique.Caractéristique}</li>
+          <li>Métal: {secondProduit.caractéristique.Metal}</li>
+          <li>Finition: {secondProduit.caractéristique.Finition}</li>
+          <li>Forme du pommeau: {secondProduit.caractéristique.Formedupommeau}</li>
+          <li>Longueur du flexible: {secondProduit.caractéristique.Longueurduflex}</li>
+        </ul>
+        <button>Ajouter au panier</button>
       </div>
     </div>)
 };
