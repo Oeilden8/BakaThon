@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import "./perceuse.css";
-import perceuse_img from "../../assets/perceuse-makita.webp";
+import perceuse_img from "../../assets/Images/perceuse-makita.webp";
 import PanierContext from "../../contexts/PanierContext";
 
 function Perceuse() {
@@ -63,6 +63,38 @@ function Perceuse() {
         >
           Comparer
         </button>
+      </div>
+      <div className="fiche_produit">
+        <h2 className="titre_détail_produit">Détails du produit</h2>
+        <div className="container_détails_produit">
+          <div className="titre_cara_produit">Caractéristiques</div>
+          <div className="caractéristique_produit">
+            <div className="liste_caractéristiques">
+              <div className="caracteristique1">alimentation</div>
+              <div className="caracteristique2">{productManoMano[0].alimentation}</div>
+            </div>
+            <div className="liste_caractéristiques">
+              <div className="caracteristique1">utilisation</div>
+              <div className="caracteristique2">{productManoMano[0].utilisation}</div>
+            </div>
+            <div className="liste_caractéristiques">
+              <div className="caracteristique1">Tension</div>
+              <div className="caracteristique2">{productManoMano[0].tension}</div>
+            </div>
+            <div className="liste_caractéristiques">
+              <div className="caracteristique1">caracteristiques</div>
+              <div className="caracteristique2">{productManoMano[0].caracteristiques}</div>
+            </div>
+            <div className="liste_caractéristiques">
+              <div className="caracteristique1">Mandrin</div>
+              <div className="caracteristique2">{productManoMano[0].diametreMandrin}</div>
+            </div>
+            <div className="liste_caractéristiques">
+              <div className="caracteristique1">Nombre de batterie</div>
+              <div className="caracteristique2">{productManoMano[0].nbBatterie}</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
