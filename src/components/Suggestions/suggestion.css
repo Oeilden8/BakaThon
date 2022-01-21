@@ -6,12 +6,15 @@
 .Card {
   display: flex;
   justify-content: flex-end;
+  background-color: white;
 
 }
 
 .CardList {
 display: flex;
 flex-direction: column;
+justify-content: flex-end;
+align-items: center;
 border-radius: 15px;
 margin: 0 0em 3em 0;
 width: 172px;
@@ -20,6 +23,7 @@ border: 1px solid gray;
 text-align: center;
 font-size: 10px;
 box-shadow: 10px 11px 5px gray;
+padding-bottom: 30px;
 }
 
 .img {
@@ -33,4 +37,11 @@ p {
 
 .btn {
   border-radius: 10%;
+}
+
+.btn-suggestion {
+align-self: center;
+background-color: #29b9ad;
+border-style: none;
+border-radius: 5px;
 }

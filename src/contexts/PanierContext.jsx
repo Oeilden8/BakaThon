@@ -75,7 +75,7 @@ export const PanierContextProvider = ({ children }) => {
     },
     {
       product:
-        "Einhell Perceuse Visseuse sans fil sur batterie TE-CD 18/2 Li Kit Power X-Change (18 V, Couple : 44 Nm, Temps de charge : 30 min) Livré avec 2 Batteries 1,5Ah et Chargeur",
+        "Einhell Perceuse Visseuse sans fil sur batterie TE-CD 18/2 Li Kit Power X-Change Livré avec 2 Batteries 1,5Ah et Chargeur",
       refNumber: "ME6081371",
       prix: 89.95,
       alimentation: "batterie",

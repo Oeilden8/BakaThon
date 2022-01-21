@@ -35,7 +35,7 @@ function Suggestions(props) {
         <h2>{props.product}</h2>
         <p>{props.refNumber}</p>
         <p>Prix : {props.prix}€</p>
-        <button
+        <button className="btn-suggestion"
           id={props.refNumber}
           onClick={(e) => updateProduct2(e.target.id)}
         >
