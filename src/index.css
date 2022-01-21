@@ -6,3 +6,17 @@ button:hover {
   color: white;
   cursor: pointer;
 }
+
+.suggestion {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 99;
+  top: 20;
+  overflow: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}

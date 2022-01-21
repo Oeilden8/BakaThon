@@ -11,7 +11,7 @@ function Comparatif() {
     <div className="mainComparatif">
       <div className="cardComparatif switchComparatifFirst">
         <div>
-          <h1 className="titreComparatif">{product_1[0].product}</h1>
+          <h2 className="titreComparatif">{product_1[0].product}</h2>
         </div>
         <div>
           <h2 className="titreComparatifDetails">Détails du produit</h2>
@@ -30,11 +30,11 @@ function Comparatif() {
           <li>poids: {product_1[0].poids}</li>
           <li>son: {product_1[0].son}</li>
         </ul>
-        <button>Ajouter au panier</button>
+        <button className="Comparatifbutton">Ajouter au panier</button>
       </div>
       <div className="cardComparatif switchComparatifFirst">
         <div>
-          <h1 className="titreComparatif">{product_2[0].product}</h1>
+          <h2 className="titreComparatif">{product_2[0].product}</h2>
         </div>
         <div>
           <h2 className="titreComparatifDetails">Détails du produit</h2>

@@ -15,17 +15,18 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Routes>
-        {/* je passe que la 1ere perceuse pour la page produit */}
-        <Route path="/" element={<Perceuse perceuse={productManoMano[0]} />} />
-      </Routes>
-      {/* je passe toute la liste pour le modal suggestions, et si on a clic sur le bouton comparer le state=true donc on affiche les suggestions */}
-      {productCompare ? <Comparatif /> : null}
+      <div className="suggestion">
       {compare
         ? productManoMano.map((productManoMano, index) => (
             <Suggestions key={index} {...productManoMano} />
           ))
-        : null}
+        : null}</div>
+         {/* je passe toute la liste pour le modal suggestions, et si on a clic sur le bouton comparer le state=true donc on affiche les suggestions */}
+      {productCompare ? <Comparatif /> : null}
+      <Routes>
+        {/* je passe que la 1ere perceuse pour la page produit */}
+        <Route path="/" element={<Perceuse perceuse={productManoMano[0]} />} />
+      </Routes>
     </div>
   );
 }

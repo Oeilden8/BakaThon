@@ -2,18 +2,35 @@
   text-align: center;
   display: inline-flex;
   font-size: 12px;
-  background-color: #f1f1f1;
+  background-color: rgb(199, 199, 199);
   text-decoration: none;
-  margin: none;
   background-image: url("https://www.transparenttextures.com/patterns/ag-square.png");
   overflow-x: scroll;
   overflow-y: hidden;
-  white-space: nowrap;
-  position: relative;
+  position: absolute;
+  top: 10;
+  z-index: 25;
   justify-content: space-between;
-  width: 100%;
+  width: 100vw;
+  height: 330px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  align-items: flex-end;
 }
 
 .Comparatifbutton {
   background-color: #48ffe0;
+  margin-top: 10px;
+}
+
+.cardComparatif{
+  width: 50vw;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.titreComparatifDetails{
+  font-size: 10px;
 }
