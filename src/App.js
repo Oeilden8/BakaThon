@@ -10,16 +10,17 @@ import "./index.css";
 
 function App() {
   //on vient chercher directement les states que l'on veut utiliser en utilisant la destructuration
-  const { productManoMano, compare } = useContext(PanierContext);
+  const { productManoMano, compare, productCompare } =
+    useContext(PanierContext);
   return (
     <div className="App">
       <Header />
       <Routes>
-        <Route path="/Comparatif" element={<Comparatif perceuse={productManoMano[0]}/>}></Route>
         {/* je passe que la 1ere perceuse pour la page produit */}
         <Route path="/" element={<Perceuse perceuse={productManoMano[0]} />} />
       </Routes>
       {/* je passe toute la liste pour le modal suggestions, et si on a clic sur le bouton comparer le state=true donc on affiche les suggestions */}
+      {productCompare ? <Comparatif /> : null}
       {compare
         ? productManoMano.map((productManoMano, index) => (
             <Suggestions key={index} {...productManoMano} />

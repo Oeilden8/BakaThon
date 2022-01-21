@@ -1,4 +1,6 @@
 import React, { createContext, useState } from "react";
+import img from "../assets/Images/perceuse-bdecker.jpg";
+import img2 from "../assets/Images/perceuse-bosch.webp";
 
 // On déclare la création du context
 const PanierContext = createContext();
@@ -9,6 +11,11 @@ export const PanierContextProvider = ({ children }) => {
   const [myBasket, setMyBasket] = useState([]);
   // state du bouton compare
   const [compare, setCompare] = useState(false);
+
+  const [product_1, setProduct_1] = useState({});
+  const [product_2, setProduct_2] = useState({});
+  const [productCompare, setProductCompare] = useState(false);
+
   const [productManoMano, setProductManoMano] = useState([
     {
       product:
@@ -27,6 +34,7 @@ export const PanierContextProvider = ({ children }) => {
       poids: "1,8kg",
       son: "72 dB",
       categorie: "Perceuse",
+      image: { img },
     },
     {
       product:
@@ -45,6 +53,7 @@ export const PanierContextProvider = ({ children }) => {
       poids: "4,2kg",
       son: "52 dB",
       categorie: "Perceuse",
+      image: { img2 },
     },
     {
       product:
@@ -82,6 +91,7 @@ export const PanierContextProvider = ({ children }) => {
       poids: "1,35kg",
       son: "48 dB",
       categorie: "Perceuse",
+      image: {img2},
     },
     {
       product:
@@ -202,6 +212,12 @@ export const PanierContextProvider = ({ children }) => {
         setMyBasket,
         compare,
         setCompare,
+        product_1,
+        setProduct_1,
+        product_2,
+        setProduct_2,
+        productCompare,
+        setProductCompare,
       }}
     >
       {children}
