@@ -9,6 +9,7 @@
   z-index: 999;
   position: absolute;
   background-color: white;
-  margin-left: -80px;
+  margin-left: -40vw;
   padding: 10px;
+  display: block;
 }
