@@ -41,8 +41,6 @@ function Comparatif() {
         </div>
         <ul>
           <li className="titreCaractéristiques">Caractéristiques</li>
-<<<<<<< HEAD
-=======
           <li>Prix: {product_2[0].prix} €</li>
           <li>Alimentation: {product_2[0].alimentation} </li>
           <li>batterie: Fournie </li>
@@ -54,7 +52,6 @@ function Comparatif() {
           <li>diametreMandrin:{product_2[0].diametreMandrin}</li>
           <li> poids: {product_2[0].poids}</li>
           <li>son: {product_2[0].son}</li>
->>>>>>> 9fcd8dc1364f84243da5cdfdba713a2305ecaa1b
         </ul>
         <button className="Comparatifbutton">Ajouter au panier</button>
       </div>
