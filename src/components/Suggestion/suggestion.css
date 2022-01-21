@@ -1,0 +1,36 @@
+.title {
+  text-align: end;
+  font-size: 10px;
+}
+
+.Card {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.CardList {
+display: flex;
+flex-direction: column;
+border-radius: 15px;
+margin: 0 0em 3em 0;
+width: 172px;
+height: 380px;
+border: 1px solid gray;
+text-align: center;
+font-size: 10px;
+box-shadow: 10px 11px 5px gray;
+}
+
+.img {
+  width: 13em;
+  margin-left: 22px;
+}
+
+p {
+  text-align: center;
+}
+
+.btn {
+  border-radius: 10%;
+}
